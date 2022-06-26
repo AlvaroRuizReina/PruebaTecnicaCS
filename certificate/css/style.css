@@ -1,0 +1,52 @@
+/* styles universal selector */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Raleway", sans-serif;
+    font-weight: 400;
+}
+
+/* color variables */
+:root {
+    --color-white: #fff;
+    --bg-color-grey-light: #343a40;
+}
+
+/* style of body */
+body {
+    background-color: var(--bg-color-grey-light);
+}
+
+/* style div container */
+.container {
+    height: auto;
+    margin: 1.06vw;
+    margin-top: 2.66vw;
+}
+
+/* paragraph styles */
+.container p {
+    text-align: center;
+    color: var(--color-white);
+    font-size: 1.06vw;
+}
+
+/* styles of img */
+.certificate img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    margin-top: 1.59vw;
+    width: auto;
+    height: auto;
+}
+
+/* media querys for responsive desing */
+@media (min-width: 450px) and (max-width: 1080px) {
+    .certificate img {
+        width: 100%;
+        height: auto;
+    }
+}

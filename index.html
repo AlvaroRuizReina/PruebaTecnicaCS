@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./accordion/css/style.min.css">
+    <script src="https://kit.fontawesome.com/ca52cb876d.js" crossorigin="anonymous"></script>
+    <title>Prueba técnica</title>
+</head>
+<body>
+    <div class="container-header">
+        <span>
+            <h1><u>QUIZ CHOISE</u></h1>
+            <p>Examen de preguntas típo test. El usuario debe de responder correctamente para aprobar 5/10 preguntas mínimo. No se
+                dispone de límite de tiempo.
+            </p>
+        </span>
+    </div>
+    <hr>
+
+    <div class="accordion">
+        <div class="accordion-item">
+            <h2 class="accordion-title">Preguntas del examen</h2>
+            <div class="accordion-answer">
+                <p>Esto es un examen <b>Quiz Choise</b>, con multiples respuestas. Se han de responder todas las preguntas, en el orden
+                    de aparición. Solo se puede marcar una respuesta como correcta, y disponemos de tres elecciones posibles. Al
+                    final del test, disponemos de un botón de resultado para pulsar, el cual si hemos aprobado, nos habilitara
+                    el botón de certificado. De esa forma obtendremos nuestro diploma.
+                </p><hr>
+                <form name="quizForm" class="accordion-form" onsubmit="return checkAnswers()">
+                    <h3>Pregunta 1: React.js es considerado un framework o una libreria.</h3></br>
+                    <input type="radio" name="ans1" value="a"> Libreria<i class="fa-solid fa-circle-check"></i></br>
+                    <input type="radio" name="ans1" value="b"> Framework<i class="fa-solid fa-circle-xmark"></i></br>
+                    <input type="radio" name="ans1" value="c"> Ninguna de las anteriores<i class="fa-solid fa-circle-xmark"></i></br></br>
+
+                    <h3>Pregunta 2: Cual de estas etiquetas, no forma parte de HTML.</h3></br>
+                    <input type="radio" name="ans2" value="a"> span<i class="fa-solid fa-circle-xmark"></i></br>
+                    <input type="radio" name="ans2" value="b"> nocap<i class="fa-solid fa-circle-check"></i></br>
+                    <input type="radio" name="ans2" value="c"> nav<i class="fa-solid fa-circle-xmark"></i></br></br>
+
+                    <h3>Pregunta 3: ¿Qué es SASS?.</h3></br>
+                    <input type="radio" name="ans3" value="a"> Libreria de pre-procesamiento de estilos<i class="fa-solid fa-circle-check"></i></br>
+                    <input type="radio" name="ans3" value="b"> Lenguaje de programación OOP<i class="fa-solid fa-circle-xmark"></i></br>
+                    <input type="radio" name="ans3" value="c"> Ninguna de las anteriores<i class="fa-solid fa-circle-xmark"></i></br></br>
+
+                    <h3>Pregunta 4: Si creamos el siguinete Array: var arr = ["a", "b", "c"]; ¿Como recogemos su último valor?.</h3></br>
+                    <input type="radio" name="ans4" value="a"> arr.lenght<i class="fa-solid fa-circle-xmark"></i></br>
+                    <input type="radio" name="ans4" value="b"> arr[1]<i class="fa-solid fa-circle-xmark"></i></br>
+                    <input type="radio" name="ans4" value="c"> arr[ arr.lenght - 1 ]<i class="fa-solid fa-circle-check"></i></br></br> 
+
+                    <h3>Pregunta 5: ¿Es posible usar Redux en Apps de tipo Angular?</h3></br>
+                    <input type="radio" name="ans5" value="a"> B es incorrecta<i class="fa-solid fa-circle-xmark"></i></br>
+                    <input type="radio" name="ans5" value="b"> No<i class="fa-solid fa-circle-xmark"></i></br>
+                    <input type="radio" name="ans5" value="c"> Si<i class="fa-solid fa-circle-check"></i></br></br>
+
+                    <h3>Pregunta 6: ¿Ionic es un framework basado en React?</h3></br>
+                    <input type="radio" name="ans6" value="a"> Si<i class="fa-solid fa-circle-xmark"></i></br>
+                    <input type="radio" name="ans6" value="b"> No<i class="fa-solid fa-circle-check"></i></br>
+                    <input type="radio" name="ans6" value="c"> Basado en Lit-HTML<i class="fa-solid fa-circle-xmark"></i></br></br> 
+
+                    <h3>Pregunta 7: ¿Qué es JSON?</h3></br>
+                    <input type="radio" name="ans7" value="a"> Formato de texto simple para el intercambio de datos.<i class="fa-solid fa-circle-check"></i></br>
+                    <input type="radio" name="ans7" value="b"> Interfaz de programación, para obtener datos y ejecutar funciones.<i class="fa-solid fa-circle-xmark"></i></br>
+                    <input type="radio" name="ans7" value="c"> Ninguna de las anteriores<i class="fa-solid fa-circle-xmark"></i></br></br>
+
+                    <h3>Pregunta 8: ¿Como se define el elemento nextElementSibling dentro de JS?</h3></br>
+                    <input type="radio" name="ans8" value="a"> Matriz<i class="fa-solid fa-circle-xmark"></i></br>
+                    <input type="radio" name="ans8" value="b"> Función<i class="fa-solid fa-circle-xmark"></i></br>
+                    <input type="radio" name="ans8" value="c"> Propiedad<i class="fa-solid fa-circle-check"></i></br></br>
+
+                    <h3>Pregunta 9: Para que sirve el atributo target = "_blank" en HTML</h3></br>
+                    <input type="radio" name="ans9" value="a"> Vincular un enlace o página web.<i class="fa-solid fa-circle-xmark"></i></br>
+                    <input type="radio" name="ans9" value="b"> Abrir un enlace en una nueva pestaña.<i class="fa-solid fa-circle-check"></i></br>
+                    <input type="radio" name="ans9" value="c"> Dar valor a una etiqueta HTML.<i class="fa-solid fa-circle-xmark"></i></br></br>
+
+                    <h3>Pregunta 10: ¿Cuantas etiquetas exitenten actualmente en HTML?</h3></br>
+                    <input type="radio" name="ans10" value="a"> 142 etiquetas<i class="fa-solid fa-circle-check"></i></br>
+                    <input type="radio" name="ans10" value="b"> 200 etiquetas<i class="fa-solid fa-circle-xmark"></i></br>
+                    <input type="radio" name="ans10" value="c"> 160 etiquetas<i class="fa-solid fa-circle-xmark"></i>
+                </form>
+            </div>
+        </div>
+        <div class="btn-submit-certificate">
+            <button type="submit" onclick="checkAnswers()">Resultado</button>
+            <a id="btn-certificate" href="../certificate/index.html" target="_blank">Certificate</a>
+        </div>
+        <div class="msg-answer-success">
+            <div id="msgSuccess">
+                <span>
+                    <h3>¡FELICIDADES!</h3>
+                    <p>Has completado con éxito el curso. Pulsa en el botón de "certificate" para obtener tu certificado.</p>
+                </span>
+            </div>
+        </div>
+        <div class="msg-answer-fail">
+            <div id="msgFail">
+                <div class="msg-fail">
+                    <span>
+                        <h3>¡LO SIENTO, NO HAS APROBADO!</h3>
+                        <p>No has conseguido completar el curso. Refresca esta página y vuélvelo a intentar de nuevo.</p>
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div class="msg-error-complete-test">
+            <div id="msgCompleteTest">
+                <div class="msg-completeTest">
+                    <span>
+                        <h3>¡NO HAS COMPLETADO TODO EL TEST!</h3>
+                        <p>No has respondido alguna pregunta/as. Rellena todo el test para poder obtener el resultado.</p>
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div class="result-answers"></div>
+    </div>
+    <script src="./accordion/js/app.min.js"></script>
+</body>
+</html>
